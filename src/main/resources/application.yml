@@ -1,0 +1,16 @@
+server:
+  port: 8080
+
+management:
+  endpoints:
+    web:
+      exposure:
+        include: health,info,metrics,prometheus
+
+aws:
+  region: ${AWS_REGION:us-east-1}
+
+app:
+  s3:
+    bucket: ${S3_BUCKET:s3-docs-dev-939111385023-us-east-1-3f1c1c-docs}
+    prefix: ${S3_PREFIX:dev-docs/}

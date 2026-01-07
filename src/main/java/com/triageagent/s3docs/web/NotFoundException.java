@@ -1,0 +1,7 @@
+package com.triageagent.s3docs.web;
+
+public class NotFoundException extends RuntimeException {
+    public NotFoundException(String message) {
+        super(message);
+    }
+}
